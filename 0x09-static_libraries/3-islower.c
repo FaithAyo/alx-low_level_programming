@@ -3,7 +3,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
+/**
+ * _islower - int
+ * @c: int
+ * Return: 0
+ */
 int _islower(int c)
 
 {
