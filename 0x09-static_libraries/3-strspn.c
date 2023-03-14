@@ -3,8 +3,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
+/**
+ * _strspn - char
+ * @s: char
+ * @accept: char
+ * Return: 0
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	return strspn(s, accept);
+	return (strspn(s, accept));
 }
