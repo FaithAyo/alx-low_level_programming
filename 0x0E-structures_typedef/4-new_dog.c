@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * dog_t - create a new dog
+ * new_dog - new
  * @name: name of the dog
  * @age: dog age
- * @ownwer: dog owner
+ * @owner: dog owner
+ * Return: name, age and ownwer:wq
+ *
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
