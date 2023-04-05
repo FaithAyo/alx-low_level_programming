@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * size_t - the fxn that prints all the element
+ *print_listint - the fxn that prints all the element
  * @h: head that points to the first element
  * Return: the number of the element of listint_t list
  */
@@ -15,6 +15,6 @@ size_t print_listint(const listint_t *h)
 	       h = h->next;
 		count++;
 	}
-	return(count);
+	return (count);
 }
 
