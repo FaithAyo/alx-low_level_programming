@@ -1,8 +1,3 @@
-/*
- * File: 0-print_list.c
- * Auth: David James Taiye
- */
-
 #include "lists.h"
 #include <stdio.h>
 
