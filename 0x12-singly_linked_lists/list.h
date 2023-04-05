@@ -3,7 +3,7 @@
 
 /*
  * File: lists.h
- * Auth: David James Taiye
+ * Auth: Faith Ojetayo
  * Desc: Header file containing prototypes and definitions for all functions
  *       and types written in the 0x11-singly_linked_lists directory.
  */
@@ -12,7 +12,7 @@
 
 /**
  * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
+ * @str: string - (malloc string)
  * @len: length of the string
  * @next: points to the next node
  *

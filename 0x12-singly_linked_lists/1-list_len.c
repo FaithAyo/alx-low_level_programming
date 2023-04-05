@@ -1,8 +1,3 @@
-/*
- * File: 1-list_len.c
- * Auth: David James Taiye
- */
-
 #include "lists.h"
 
 /**
