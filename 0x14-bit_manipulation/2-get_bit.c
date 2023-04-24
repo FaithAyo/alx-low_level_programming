@@ -1,46 +1,21 @@
-#include "main.h"
+#include"main.h"
+
 /**
- * _power - calculate base and power
- * @base: base of the exponet
- * @pow: power of the exponet
- * Return: value of base and power
+ * get_bit - returns the value of a bit at a given index.
+ * @n: number to check bits in
+ * @index: index at which to check bit
+ *
+ * Return: value of the bit, or -1 if there is an error
  */
-unsigned long int _power(unsigned int base, unsigned int pow)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int number;
-	unsigned int i;
+	unsigned long int div, number;
 
-	number = 1;
-	for (i = 1; i <= pow; i++)
-		number *= base;
-	return (number);
-}
-/**
- * print_binary - prints the binary representation of a number
- * @n: num of represented
- * Return: void
- */
-void print_binary(unsigned long int n)
-{
-	unsigned long int div, result;
-	char flag;
-
-	flag = 0;
-	div = _power(2, sizeof(unsigned long int) * 8 - 1);
-
-	while (div != 0)
-	{
-		result = n & div;
-		if (result == div)
-		{
-			flag = 1;
-			_putchar('1');
-
-		}
-		else if (flag == 1 || dev == 1)
-		{
-			_putchar('0');
-		}
-		dev >>= 1;
-	}
+	if (index > (sizeof(unsigned long int) * 8 - 1))
+		return (-1);
+	div = 1 << index;
+	number = n & div;
+	if (number == div)
+		return (1);
+	return (0);
 }
